@@ -1,5 +1,6 @@
 *.log
 .DS_Store
+/frontend/__MACOSX/
 .env
 .env.backup
 .env.production
@@ -14,7 +15,9 @@
 /.zed
 /auth.json
 /node_modules
-/frontend/node_modules/
+/fro ders fixing hostingntend/node_modules/
+/frontend/myturn_ptp/node_modules/
+/frontend/myturn_ptp/dist/
 /frontend/dist/
 /public/build
 /public/fonts-manifest.dev.json
