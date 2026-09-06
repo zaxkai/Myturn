@@ -98,23 +98,23 @@ Sistem penjadwalan digital membantu mengurangi waktu tunggu, memberikan informas
 
 ### Live Demo
 
-🔗 **[Kunjungi Website](https://myturn-coral.vercel.app/ baby baby turns plugs)**
+🔗 **[Kunjungi Website](https://myturn-coral.vercel.app/ baby through plug in set up)**
 
 ### Screenshot Aplikasi
 arrest
-  <img src="Screenshot%20Aplikasi/Hompage.jpeg" alt="Homepage Myturn" width="800"/>
+  <img src="backend/Screenshot%20Aplikasi/Hompage.jpeg" alt="Homepage Myturn" width="800"/>
   <p><em>Homepage - Beranda MyTurn dengan pencarian instansi dan peta antrean langsung.</em></p>
   
-  <img src="Screenshot%20Aplikasi/Dashboard.jpeg" alt="Dashboard Myturn" width="800"/>
+  <img src="backend/Screenshot%20Aplikasi/Dashboard.jpeg" alt="Dashboard Myturn" width="800"/>
   <p><em>Dashboard Institusi - Detail Klinik Sehat Utama, antrean berjalan, prediksi jam terbaik, dan booking slot.</em></p>
   
-  <img src="Screenshot%20Aplikasi/fitur.jpeg" alt="Feature Myturn" width="800"/>
+  <img src="backend/Screenshot%20Aplikasi/fitur.jpeg" alt="Feature Myturn" width="800"/>
   <p><em>Peta Antrean - Pencarian institusi, marker lokasi, estimasi waktu tunggu, dan daftar institusi unggulan.</em></p>
 </div>
 
 ### Video Demo
 
-📹 **[Link Video Demo](https://[URL_VIDEO])** _(opsional)_
+📹 **[Link Video Demo](https://drive.google.com/file/d/1Wb_G68Dsrk8jYu1ya4GmZLFxIUT7NSb6/view?usp=sharing)** 
 
 ---
 
@@ -366,7 +366,6 @@ Fitur admin belum termasuk dalam versi aplikasi saat ini.
 
 ```
 Local: http://127.0.0.1:8000/api
-Production: https://[URL_RENDER_KAMU]/api
 ```
 
 ### Endpoints
