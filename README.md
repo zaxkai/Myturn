@@ -136,7 +136,7 @@ Sistem penjadwalan digital membantu mengurangi waktu tunggu, memberikan informas
 
 ### Video Demo
 
-📹 Video demo belum tersedia.
+📹 **[Link Video Demo](https://drive.google.com/file/d/1Wb_G68Dsrk8jYu1ya4GmZLFxIUT7NSb6/view?usp=sharing)** 
 
 ---
 
