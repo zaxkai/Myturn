@@ -30,18 +30,12 @@
 ---
 
 ## 👥 Tim Developer
- __________________________________________________________________________________________________________________________
-|           Nama                    |           Peran                             |           GitHub                       |
-|___________________________________|_____________________________________________|________________________________________|
-|                                   |                                             |                                        |
-| Ghazwan Rayyana Sabri Indarto     | Project Lead & UI/UX Designer               | [GitHub](https://github.com/Rayyeenee) |
-|___________________________________|_____________________________________________|________________________________________|
-|                                   |                                             |                                        |
-| Shafaraz Ilhan Dzulfikar          | Frontend Developer                          | [GitHub](https://github.com/Far-aaz)   |
-|___________________________________|_____________________________________________|________________________________________|
-|                                   |                                             |                                        |
-| Alvino Aldorino                   | Backend Developer                           | [GitHub](https://github.com/zaxkai)    |
-|___________________________________|_____________________________________________|________________________________________|
+
+| Nama | Peran | GitHub |
+|---|---|---|
+| Ghazwan Rayyana Sabri Indarto | Project Lead & UI/UX Designer | [Rayyeenee](https://github.com/Rayyeenee) |
+| Shafaraz Ilhan Dzulfikar | Frontend Developer | [Far-aaz](https://github.com/Far-aaz) |
+| Alvino Aldorino | Backend Developer | [zaxkai](https://github.com/zaxkai) |
 
 
 ---
@@ -104,33 +98,13 @@ Sistem penjadwalan digital membantu mengurangi waktu tunggu, memberikan informas
 ## ✨ Fitur Unggulan
 
 ### Fitur Utama
- ____________________________________________________________________________________________________
-|         Fitur             |         Deskripsi              |         Keunggulan                    |
-|___________________________ |_______________________________|_______________________________________|
-|                           |                                |                                       |
-|                           | Pengguna dapat mengambil       | Menghemat waktu tunggu dan            |
-|                           | nomor antrean secara online    | mengurangi kerumunan di area          |                              
-| Check-In Antrean Virtual  | tanpaharus mengantre fisik di  | tertentu                              |
-|                           | lokasi                         |                                       |
-|___________________________|________________________________|_______________________________________|         
-|                           |                                |                                       |
-|                           | Menampilkan tingkat kepadatan  | Membantu pengguna memilih waktu       | 
-|                           | pengunjung secara real-time    | kunjungan yang lebih nyaman dan aman  |
-| Status Live Kepadatan     | berdasarkan data terkini       |                                       |
-|                           |                                |                                       |
-|___________________________|________________________________|_______________________________________|
-|                           |                                |                                       |
-|                           | Peta digital yang menampilkan  | Memudahkan navigasi pengguna tanpa    | 
-|                           | lokasi, rute, dan titik-titik  | perlu bertanya atau tersesat          |
-| Peta Interaktif           | penting secara interaktif      |                                       |
-|                           |                                |                                       |
-|___________________________|________________________________|_______________________________________|
-|                           |                                | Membantu pengguna memilih waktu      |
-|                           | Sistem memprediksi jam-jam     | Membantu pengguna merencanakan        |
-|                           | dengan kepadatan rendah        | kunjungan agar lebih efisien          |
-| Prediksi Jam Terbaik      | berdasarkan data historis      | dan minim antrean                     |
-|                           |                                |                                       |
-|___________________________|________________________________|_______________________________________|
+
+| Fitur | Deskripsi | Keunggulan |
+|---|---|---|
+| **Check-In Antrean Virtual** | Pengguna dapat mengambil nomor antrean secara online tanpa harus mengantre fisik di lokasi. | Menghemat waktu tunggu dan mengurangi kerumunan di area tertentu. |
+| **Status Live Kepadatan** | Menampilkan tingkat kepadatan pengunjung secara real-time berdasarkan data terkini. | Membantu pengguna memilih waktu kunjungan yang lebih nyaman dan aman. |
+| **Peta Interaktif** | Peta digital yang menampilkan lokasi, rute, dan titik-titik penting secara interaktif. | Memudahkan navigasi pengguna tanpa perlu bertanya atau tersesat. |
+| **Prediksi Jam Terbaik** | Sistem memprediksi jam-jam dengan kepadatan rendah berdasarkan data historis. | Membantu pengguna merencanakan kunjungan agar lebih efisien dan minim antrean. |
 
 ### Fitur Tambahan
 
