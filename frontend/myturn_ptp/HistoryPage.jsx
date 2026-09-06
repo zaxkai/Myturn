@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Building2, ChevronRight, CircleStar } from 'lucide-react';
+import { Building2, ChevronRight, CircleStar, ClipboardList } from 'lucide-react';
 import { usePreferences } from './PreferencesContext.jsx';
 
 function HistoryPage({ onNotify, entries = [] }) {
@@ -52,7 +52,13 @@ function HistoryPage({ onNotify, entries = [] }) {
           })}
         </div>
 
-        {!visibleEntries.length && <p className="history-empty">{t('noHistory')}</p>}
+        {!visibleEntries.length && (
+          <div className="history-empty">
+            <span className="history-empty-icon"><ClipboardList size={30} /></span>
+            <h2>Belum ada riwayat</h2>
+            <p>{t('noHistory')}</p>
+          </div>
+        )}
         {canLoadMore && <div className="load-more"><button onClick={() => setVisibleCount((count) => count + 3)}>{t('loadMore')}</button></div>}
         {!canLoadMore && visibleEntries.length > 3 && <p className="history-end">{t('allHistoryShown')}</p>}
       </section>
