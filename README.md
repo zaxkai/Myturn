@@ -146,9 +146,9 @@ API Testing  : Thunder Client
 - Menyediakan autentikasi berbasis Laravel Sanctum untuk endpoint privat.
 - Menyesuaikan response API agar dapat dikonsumsi frontend React dan diuji melalui Thunder Client.
 
-#### DevOps & Tools
 ```
-Deployment   : Render (Backend) & Vercel (Frontend)
+#### DevOps & Tools
+Deployment   : vercel
 CI/CD        : GitHub Actions
 Testing      : PHPUnit dan Thunder Client
 Monitoring   : Laravel log
