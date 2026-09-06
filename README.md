@@ -7,7 +7,7 @@
   
   **Submission for ITECHNO CUP 2026 - Web Development**
   
-  **By [Gotei 13]**
+  **By Gotei 13**
   
 </div>
 
@@ -15,7 +15,7 @@
 
 ## 📋 Daftar Isi
 
-- [T ders fixing hosting bottlenings on yat no gas one yeah one one one drives online post me tored hospital demo sleep are pushing
+- T ders fixing hosting bottlenings on yat no gas one yeah one one one drives online post me tored hospital demo sleep are pushing
 - [Fitur Unggulan](#-fitur-unggulan)
  [Tentang Proyek](#-tentang-proyek)
 
