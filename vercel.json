@@ -2,6 +2,6 @@
   "buildCommand": "npm --prefix frontend/myturn_ptp run build",
   "outputDirectory": "frontend/myturn_ptp/dist",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
