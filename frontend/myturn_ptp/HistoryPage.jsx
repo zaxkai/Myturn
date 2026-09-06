@@ -7,9 +7,24 @@ function HistoryPage({ onNotify, entries = [] }) {
   const [filter, setFilter] = useState('all');
   const [visibleCount, setVisibleCount] = useState(3);
 
+  const safeEntries = useMemo(
+    () => (Array.isArray(entries) ? entries : []).map((entry, index) => ({
+      ...entry,
+      id: entry.id ?? `history-${index}`,
+      name: entry.name || 'Institusi MyTurn',
+      service: entry.service || 'Layanan antrean',
+      queue: entry.queue || '-',
+      date: entry.date || 'Tanggal tidak tersedia',
+      status: ['active', 'completed', 'cancelled'].includes(entry.status) ? entry.status : 'active',
+      points: Number.isFinite(Number(entry.points)) ? Number(entry.points) : 0,
+      Icon: typeof entry.Icon === 'function' ? entry.Icon : Building2,
+    })),
+    [entries],
+  );
+
   const filteredAll = useMemo(
-    () => (filter === 'all' ? entries : entries.filter((entry) => entry.status === filter)),
-    [entries, filter],
+    () => (filter === 'all' ? safeEntries : safeEntries.filter((entry) => entry.status === filter)),
+    [safeEntries, filter],
   );
   const visibleEntries = filteredAll.slice(0, visibleCount);
 
@@ -20,8 +35,8 @@ function HistoryPage({ onNotify, entries = [] }) {
 
   const canLoadMore = filteredAll.length > visibleCount;
 
-  const totalVisits = entries.length;
-  const totalPoints = entries.reduce((sum, entry) => sum + (entry.points ?? 0), 0);
+  const totalVisits = safeEntries.length;
+  const totalPoints = safeEntries.reduce((sum, entry) => sum + entry.points, 0);
 
   return (
     <main className="history-page section-pad-small">
