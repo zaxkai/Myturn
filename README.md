@@ -98,7 +98,7 @@ Sistem penjadwalan digital membantu mengurangi waktu tunggu, memberikan informas
 
 ### Live Demo
 
-🔗 **[Kunjungi Website](https://myturn-coral.vercel.app/ baby through plug in set up)**
+🔗 **[Kunjungi Website](https://myturn-coral.vercel.app/)**
 
 ### Screenshot Aplikasi
 arrest
