@@ -3,11 +3,11 @@
   # MyTurn
   ### Antrean digital yang lebih terencana
   
-  [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+  [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](backend/LICENSE)
   
   **Submission for ITECHNO CUP 2026 - Web Development**
   
-  **By Gotei 13**
+  **By [Gotei 13]**
   
 </div>
 
@@ -15,10 +15,21 @@
 
 ## 📋 Daftar Isi
 
-- T ders fixing hosting bottlenings on yat no gas one yeah one one one drives online post me tored hospital demo sleep are pushing
+- [Tentang Proyek](#-tentang-proyek)
 - [Fitur Unggulan](#-fitur-unggulan)
- [Tentang Proyek](#-tentang-proyek)
+- [Demo & Screenshot](#-demo--screenshot)
+- [Teknologi](#-teknologi)
+- [Arsitektur Sistem](#-arsitektur-sistem)
+- [Instalasi & Setup](#-instalasi--setup)
+- [Penggunaan](#-penggunaan)
+- [API Documentation](#-api-documentation)
+- [Testing](#-testing)
+- [Tim Developer](#-tim-pengembang)
+- [Lisensi](#-lisensi)
 
+---
+
+## 👥 Tim Developer
 
 | Nama | Peran | GitHub |
 |---|---|---|
@@ -63,9 +74,17 @@ Data dan Fakta Pendukung
     |                           |   antaranya via smartphone.              |                                          |
     |_________________________________________________________________________________________________________________|    
 
+    Kesimpulan: Sistem penjadwalan digital terbukti efektif memangkas waktu tunggu, sementara kepadatan loket dan tingginya keluhan 
+    ketidakjelasan pelayanan menunjukkan masalah ini nyata secara nasional — dan tingkat adopsi internet masyarakat sudah cukup untuk mendukung solusi berbasis web.
+### Kesimpulan Masalah
+
 Sistem penjadwalan digital membantu mengurangi waktu tunggu, memberikan informasi kepadatan yang lebih jelas, dan mendukung masyarakat yang sudah terbiasa menggunakan layanan digital.
 
+### Solusi yang Ditawarkan
+
+- **Status antrean live**: Menampilkan kepadatan dan estimasi waktu tunggu dari backend.
 - **Check-in virtual**: Pengguna dapat mengambil nomor antrean sebelum datang ke lokasi.
+- **Booking kunjungan**: Pengguna dapat mengirim permintaan jadwal kunjungan melalui aplikasi.
 - **Peta instansi**: Membantu pengguna menemukan lokasi layanan yang tersedia.
 
 ### Tujuan Proyek
@@ -76,8 +95,10 @@ Sistem penjadwalan digital membantu mengurangi waktu tunggu, memberikan informas
 
 ---
 
+## ✨ Fitur Unggulan
 
 ### Fitur Utama
+
 | Fitur | Deskripsi | Keunggulan |
 |---|---|---|
 | **Check-In Antrean Virtual** | Pengguna dapat mengambil nomor antrean secara online tanpa harus mengantre fisik di lokasi. | Menghemat waktu tunggu dan mengurangi kerumunan di area tertentu. |
@@ -101,20 +122,21 @@ Sistem penjadwalan digital membantu mengurangi waktu tunggu, memberikan informas
 🔗 **[Kunjungi Website](https://myturn-coral.vercel.app/)**
 
 ### Screenshot Aplikasi
-arrest
+
+<div align="center">
   <img src="backend/Screenshot%20Aplikasi/Hompage.jpeg" alt="Homepage Myturn" width="800"/>
   <p><em>Homepage - Beranda MyTurn dengan pencarian instansi dan peta antrean langsung.</em></p>
   
   <img src="backend/Screenshot%20Aplikasi/Dashboard.jpeg" alt="Dashboard Myturn" width="800"/>
   <p><em>Dashboard Institusi - Detail Klinik Sehat Utama, antrean berjalan, prediksi jam terbaik, dan booking slot.</em></p>
   
-  <img src="backend/Screenshot%20Aplikasi/fitur.jpeg" alt="Feature Myturn" width="800"/>
+  <img src="backend/Screenshot%20Aplikasi/fitur.jpeg" alt="Peta Antrean MyTurn" width="800"/>
   <p><em>Peta Antrean - Pencarian institusi, marker lokasi, estimasi waktu tunggu, dan daftar institusi unggulan.</em></p>
 </div>
 
 ### Video Demo
 
-📹 **[Link Video Demo](https://drive.google.com/file/d/1Wb_G68Dsrk8jYu1ya4GmZLFxIUT7NSb6/view?usp=sharing)** 
+📹 Video demo belum tersedia.
 
 ---
 
@@ -128,9 +150,21 @@ Framework    : React
 UI Library   : Tidak menggunakan
 State Mgmt   : Tidak ada library eksternal. Cuma useState/useEffect/useMemo bawaan React, semua state "global" (user login, ticket antrean, history) di-lift ke App.jsx lalu dioper lewat props ke komponen anak
 Validation   : Tidak ada library. Validasi form (misal cek email/password kosong) ditulis manual pakai if-else biasa di dalam handler onSubmit
+               Routing	Tidak pakai react-router. Routing manual pakai window.history.pushState + parsing window.location.pathname sendiri (lihat fungsi parsePage() di App.jsx)
+
+#### Backend
+```
+Runtime      : PHP 8.3+
+Framework    : Laravel 13 REST API
+Database     : MySQL melalui Laragon
 ORM          : Eloquent ORM
 Auth         : Laravel Sanctum
 API Testing  : Thunder Client
+```
+
+#### Kontribusi Frontend
+
+- Membangun antarmuka aplikasi menggunakan React dan Vite.
 - Membuat halaman Explore, Institution, Queue, Profile, Support, History, Sign In, dan Sign Up.
 - Menghubungkan frontend dengan API Laravel untuk mengambil data institusi live.
 - Menampilkan marker peta berdasarkan latitude dan longitude dari backend.
@@ -146,9 +180,9 @@ API Testing  : Thunder Client
 - Menyediakan autentikasi berbasis Laravel Sanctum untuk endpoint privat.
 - Menyesuaikan response API agar dapat dikonsumsi frontend React dan diuji melalui Thunder Client.
 
-```
 #### DevOps & Tools
-Deployment   : vercel
+```
+Deployment   : Render (Backend) & Vercel (Frontend)
 CI/CD        : GitHub Actions
 Testing      : PHPUnit dan Thunder Client
 Monitoring   : Laravel log
@@ -157,6 +191,7 @@ Monitoring   : Laravel log
 ### Alasan Pemilihan Teknologi Backend
 
 | Teknologi | Alasan Pemilihan |
+|-----------|------------------|
 | **Laravel** | Menyediakan struktur MVC, routing API, validasi request, dan middleware yang rapi untuk pengembangan backend. |
 | **Eloquent ORM** | Memudahkan akses dan relasi data institusi, status antrean, pengguna, booking, dan antrean virtual. |
 | **Sanctum** | Menyediakan autentikasi token yang ringan untuk komunikasi frontend React dengan API Laravel. |
@@ -264,12 +299,17 @@ erDiagram
 
 ### Folder Structure
 
+```
 project-root/
 ├── app/                # Controllers, models, dan providers Laravel
 ├── database/           # Migrations, factories, dan seeders
 ├── routes/api.php      # Endpoint REST API
 ├── resources/          # Asset dan view Laravel
 ├── public/             # Entry point aplikasi
+├── App.jsx             # Entry point frontend React
+├── QueuePage.jsx       # Halaman dashboard antrean
+├── package.json        # Dependency frontend
+├── composer.json       # Dependency backend
 └── artisan             # CLI Laravel
 ```
 
@@ -320,6 +360,7 @@ Setelah mengisi `.env`, pastikan database `myturn_db` sudah dibuat pada MySQL.
 
 ```bash
 # Jalankan migrasi Laravel
+php artisan migrate
 ```
 
 #### 4️⃣ Install Frontend Dependencies dan Run Development Server
@@ -345,6 +386,7 @@ php artisan serve
 
 # Terminal 2: Frontend Vite
 npm run dev
+```
 
 ### User Guide
 
@@ -366,6 +408,7 @@ Fitur admin belum termasuk dalam versi aplikasi saat ini.
 
 ```
 Local: http://127.0.0.1:8000/api
+Production: https://[URL_RENDER_KAMU]/api
 ```
 
 ### Endpoints
@@ -420,6 +463,7 @@ Response sukses:
   }
 }
 ```
+
 ### Example Request: Login
 
 ```javascript
@@ -435,11 +479,13 @@ const response = await fetch('http://127.0.0.1:8000/api/login', {
 
 ---
 
+## 🧪 Testing
 
 ### Running Tests
 
 ```bash
 # Backend feature tests
+php artisan test
 
 # Format pemeriksaan kode PHP
 vendor/bin/pint --test
@@ -451,7 +497,7 @@ Pengujian endpoint dapat dilakukan menggunakan Thunder Client dengan base URL `h
 
 ## 📄 Lisensi
 
-Proyek ini dilisensikan di bawah [MIT License](LICENSE) - lihat file LICENSE untuk detail lebih lanjut.
+Proyek ini dilisensikan di bawah [MIT License](backend/LICENSE) - lihat file LICENSE untuk detail lebih lanjut.
 
 ---
 
