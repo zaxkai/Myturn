@@ -150,7 +150,7 @@ Sistem penjadwalan digital membantu mengurangi waktu tunggu, memberikan informas
 ### Screenshot Aplikasi
 
 <div align="center">
-  <img src="Screenshot%20Aplikasi/Hompage.jpe" alt="Homepage Myturn" width="800"/>
+  <img src="Screenshot%20Aplikasi/Hompage.jpeg" alt="Homepage Myturn" width="800"/>
   <p><em>Homepage - Tampilan utama aplikasi</em></p>
   
   <img src="Screenshot%20Aplikasi/Dashboard.jpeg" alt="Dashboard Myturn" width="800"/>
