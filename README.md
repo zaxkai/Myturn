@@ -153,13 +153,13 @@ Validation   : Tidak ada library. Validasi form (misal cek email/password kosong
                Routing	Tidak pakai react-router. Routing manual pakai window.history.pushState + parsing window.location.pathname sendiri (lihat fungsi parsePage() di App.jsx)
 
 #### Backend
-```
 Runtime      : PHP 8.3+
 Framework    : Laravel 13 REST API
 Database     : MySQL melalui Laragon
 ORM          : Eloquent ORM
 Auth         : Laravel Sanctum
 API Testing  : Thunder Client
+```
 ```
 
 #### Kontribusi Frontend
@@ -181,11 +181,11 @@ API Testing  : Thunder Client
 - Menyesuaikan response API agar dapat dikonsumsi frontend React dan diuji melalui Thunder Client.
 
 #### DevOps & Tools
-```
 Deployment   : Render (Backend) & Vercel (Frontend)
 CI/CD        : GitHub Actions
 Testing      : PHPUnit dan Thunder Client
 Monitoring   : Laravel log
+```
 ```
 
 ### Alasan Pemilihan Teknologi Backend
