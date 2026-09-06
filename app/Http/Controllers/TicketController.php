@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Ticket;
+use App\Models\Antrean;
 use App\Models\QueueStatus;
 use App\Models\Institution;
 
@@ -25,9 +25,9 @@ class TicketController extends Controller
 
         // 3. Buat Tiket Antrean Baru
         $nomorBaru = 'A-' . rand(100, 999); // Generate nomor acak sementara
-        $tiketBaru = Ticket::create([
+        $tiketBaru = Antrean::create([
             'user_id' => $userId,
-            'institution_id' => $institutionId, // Mapping instansi_id -> institution_id
+            'instansi_id' => $institutionId,
             'nomor_antrean' => $nomorBaru,
             'status' => 'menunggu'
         ]);
