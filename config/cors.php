@@ -20,8 +20,9 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-    'http://localhost:5173', 
-    'http://localhost:3000',
+    'http://localhost:5173', // Alamat lokal React Shafaraz
+    'http://localhost:3000', // Alternatif lokal
+    'https://[link-vercel-lo-nanti].vercel.app' // Alamat live frontend
     ],
 
     'allowed_origins_patterns' => [],
