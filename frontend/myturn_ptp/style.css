@@ -420,3 +420,12 @@ html[data-theme='dark'] .stage-kicker { color: #d7ecdf; }
   .stage-orbit-two { height: 76vw; width: 76vw; }
   .stage-status { bottom: 24px; left: 24px; }
 }
+
+/* Keep the scrolled explore header compact on mobile. */
+@media (max-width: 680px) {
+  .explore-topbar.is-scrolled .nav-links { display: none !important; transform: none !important; }
+  .explore-topbar.is-scrolled .nav-links.is-open { display: flex !important; }
+  .explore-topbar.is-scrolled .nav-actions.desktop-actions { display: none !important; }
+  .explore-topbar.is-scrolled .menu-button { display: flex !important; }
+  .explore-topbar.is-scrolled { background: rgba(244, 248, 251, .96); border-color: #e4ecef; }
+}
